@@ -42,7 +42,7 @@
 }
 
 body {
-  background: #959697 !important;
+  /* background: #959697 !important; */
   color: #fff !important;
   margin: 0;
   padding: 0;
@@ -53,4 +53,30 @@ body {
 .me-container{
   width: 85%;
   height:  calc(100vh - 24px);
+}
+
+
+.photos {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    /* position: relative; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+}
+
+.photos__column{
+    display: block;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 5px;
+}
+.photo-item__img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+   
 }

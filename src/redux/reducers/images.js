@@ -9,9 +9,29 @@ export default function imagesReducers(state = INIT_STATE.images, action) {
         isLoading: true,
       };
     case getTypeAction(getImages.getImagesSuccess):
+      // let column1 = []
+      // let column2 = []
+      // let column3 = []
+      // action.payload.forEach((item,index)=>{
+      //     if(index % 3 == 0) {
+      //       column1[0].push(item)
+      //     }
+      //     if(index % 3 == 1) {
+      //       column2[1].push(item)
+      //     }
+      //     if(index % 3 == 2) {
+      //       column3[2].push(item)
+      //     }
+        
+      //   })
+
+      //   let array = [column1 ,column2 ,column3] 
+   
+        
       return {
         ...state,
         isLoading: false,
+    
         data:action.payload,
       };
     case getTypeAction(getImages.getImagesFailure):
